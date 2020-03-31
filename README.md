@@ -1,12 +1,15 @@
 
-Link this keymap into the right folder:
+First run this to get all dependencies
 ```
-ln -s ~/git/keymap/crkbd ~/git/qmk_firmware/keyboards/crkbd/keymaps/wulkan
+make git-submodule
 ```
 
-After you can build it with:
-
+To just build the keymap run
 ```
-cd ~/git/qmk_firmware
-make crkbd:wulkan
+make build
+```
+
+To build and flash the keymap to the keyboard run
+```
+make flash
 ```
